@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="150.0" minWidth="340.0" prefHeight="170.0" prefWidth="350.0" style="-fx-background-color: #FFF8DC;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.timefx.HelloController">
+    <children>
+        <Label fx:id="timeTxt" contentDisplay="CENTER" layoutX="20.0" layoutY="14.0" prefHeight="31.0" prefWidth="78.0" text="00:00:00" textFill="#291fdb" textOverrun="CLIP">
+         <font>
+            <Font name="System Italic" size="21.0" />
+         </font></Label>
+      <MenuButton fx:id="hour" layoutX="170.0" layoutY="16.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="58.0">
+        <items>
+          <MenuItem fx:id="hour0" mnemonicParsing="false" text="0" />
+          <MenuItem fx:id="hour1" mnemonicParsing="false" text="1" />
+            <MenuItem fx:id="hour2" mnemonicParsing="false" text="2" />
+            <MenuItem fx:id="hour3" mnemonicParsing="false" text="3" />
+            <MenuItem fx:id="hour4" mnemonicParsing="false" text="4" />
+            <MenuItem fx:id="hour5" mnemonicParsing="false" text="5" />
+            <MenuItem fx:id="hour6" mnemonicParsing="false" text="6" />
+            <MenuItem fx:id="hour7" mnemonicParsing="false" text="7" />
+            <MenuItem fx:id="hour8" mnemonicParsing="false" text="8" />
+            <MenuItem fx:id="hour9" mnemonicParsing="false" text="9" />
+            <MenuItem fx:id="hour10" mnemonicParsing="false" text="10" />
+            <MenuItem fx:id="hour11" mnemonicParsing="false" text="11" />
+            <MenuItem fx:id="hour12" mnemonicParsing="false" text="12" />
+            <MenuItem fx:id="hour13" mnemonicParsing="false" text="13" />
+            <MenuItem fx:id="hour14" mnemonicParsing="false" text="14" />
+            <MenuItem fx:id="hour15" mnemonicParsing="false" text="15" />
+            <MenuItem fx:id="hour16" mnemonicParsing="false" text="16" />
+            <MenuItem fx:id="hour17" mnemonicParsing="false" text="17" />
+            <MenuItem fx:id="hour18" mnemonicParsing="false" text="18" />
+            <MenuItem fx:id="hour19" mnemonicParsing="false" text="19" />
+            <MenuItem fx:id="hour20" mnemonicParsing="false" text="20" />
+            <MenuItem fx:id="hour21" mnemonicParsing="false" text="21" />
+            <MenuItem fx:id="hour22" mnemonicParsing="false" text="22" />
+            <MenuItem fx:id="hour23" mnemonicParsing="false" text="23" />
+        </items>
+      </MenuButton>
+      <MenuButton fx:id="minute" layoutX="240.0" layoutY="16.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="58.0" textAlignment="JUSTIFY">
+        <items>
+          <MenuItem fx:id="minute00" mnemonicParsing="false" text="00" />
+          <MenuItem fx:id="minute5" mnemonicParsing="false" text="05" />
+            <MenuItem fx:id="minute10" mnemonicParsing="false" text="10" />
+            <MenuItem fx:id="minute15" mnemonicParsing="false" text="15" />
+            <MenuItem fx:id="minute20" mnemonicParsing="false" text="20" />
+            <MenuItem fx:id="minute25" mnemonicParsing="false" text="25" />
+            <MenuItem fx:id="minute30" mnemonicParsing="false" text="30" />
+            <MenuItem fx:id="minute35" mnemonicParsing="false" text="35" />
+            <MenuItem fx:id="minute40" mnemonicParsing="false" text="40" />
+            <MenuItem fx:id="minute45" mnemonicParsing="false" text="45" />
+            <MenuItem fx:id="minute50" mnemonicParsing="false" text="50" />
+            <MenuItem fx:id="minute55" mnemonicParsing="false" text="55" />
+        </items>
+      </MenuButton>
+    </children>
+</AnchorPane>
