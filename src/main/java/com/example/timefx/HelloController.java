@@ -164,7 +164,7 @@ int timeInt;
         int hourBut = LocalDateTime.now().getHour();
         hour.setText(String.valueOf(hourBut));
         minute.setText(String.valueOf(minuteBut));
-        System.out.println(hour0);
+        
 //        Process off = Runtime.getRuntime().exec("shutdown -s");
 
         hour0.setOnAction(new EventHandler<ActionEvent>() {
