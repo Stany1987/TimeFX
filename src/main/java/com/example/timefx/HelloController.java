@@ -1,14 +1,17 @@
 package com.example.timefx;
+
 import javafx.application.Platform;
+import javafx.event.ActionEvent;
+import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 import javafx.scene.control.MenuButton;
 import javafx.scene.control.MenuItem;
 
+import java.io.IOException;
 import java.net.URL;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
-import java.util.Date;
 import java.util.ResourceBundle;
 import java.util.concurrent.Executors;
 import java.util.concurrent.ScheduledExecutorService;
@@ -142,13 +145,13 @@ public class HelloController {
     private MenuItem minute55;
 
 
-
     @FXML
 
     public Label timeTxt;
 
     @FXML
-    void initialize() {
+    void initialize() throws IOException {
+int timeInt;
         DateTimeFormatter dateTimeFormatter = DateTimeFormatter.ofPattern("hh:mm:ss");
         ScheduledExecutorService executor = Executors.newSingleThreadScheduledExecutor();
         executor.scheduleWithFixedDelay(() -> {
@@ -157,11 +160,34 @@ public class HelloController {
             Platform.runLater(() -> timeTxt.setText(nowFormatted));
         }, 0, 1, TimeUnit.SECONDS);
 
-     int minuteBut=LocalDateTime.now().getMinute();
-        int hourBut= LocalDateTime.now().getHour();
+        int minuteBut = LocalDateTime.now().getMinute();
+        int hourBut = LocalDateTime.now().getHour();
         hour.setText(String.valueOf(hourBut));
         minute.setText(String.valueOf(minuteBut));
+        System.out.println(hour0);
+//        Process off = Runtime.getRuntime().exec("shutdown -s");
 
+        hour0.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent actionEvent) {
+                hour.setText("00");
+
+            }
+        });
+        hour1.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent actionEvent) {
+                hour.setText("01");
+                int i = 0;
+
+            }
+        });
+        hour2.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent actionEvent) {
+                hour.setText("02");
+            }
+        });
     }
 
 }

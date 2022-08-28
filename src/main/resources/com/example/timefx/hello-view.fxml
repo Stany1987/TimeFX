@@ -12,7 +12,7 @@
          <font>
             <Font name="System Italic" size="21.0" />
          </font></Label>
-      <MenuButton fx:id="hour" layoutX="170.0" layoutY="16.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="58.0">
+      <MenuButton fx:id="hour" alignment="CENTER" contentDisplay="BOTTOM" layoutX="170.0" layoutY="16.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="58.0" text="00" textFill="#bc1616">
         <items>
           <MenuItem fx:id="hour0" mnemonicParsing="false" text="0" />
           <MenuItem fx:id="hour1" mnemonicParsing="false" text="1" />
@@ -39,8 +39,11 @@
             <MenuItem fx:id="hour22" mnemonicParsing="false" text="22" />
             <MenuItem fx:id="hour23" mnemonicParsing="false" text="23" />
         </items>
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
       </MenuButton>
-      <MenuButton fx:id="minute" layoutX="240.0" layoutY="16.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="58.0" textAlignment="JUSTIFY">
+      <MenuButton fx:id="minute" alignment="CENTER" contentDisplay="BOTTOM" layoutX="240.0" layoutY="16.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="58.0" text="00" textFill="#bc1616">
         <items>
           <MenuItem fx:id="minute00" mnemonicParsing="false" text="00" />
           <MenuItem fx:id="minute5" mnemonicParsing="false" text="05" />
@@ -55,6 +58,9 @@
             <MenuItem fx:id="minute50" mnemonicParsing="false" text="50" />
             <MenuItem fx:id="minute55" mnemonicParsing="false" text="55" />
         </items>
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
       </MenuButton>
     </children>
 </AnchorPane>
