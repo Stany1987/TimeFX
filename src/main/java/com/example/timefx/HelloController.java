@@ -19,6 +19,7 @@ import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.TimeUnit;
 
 public class HelloController extends HelloApplication {
+
     @FXML
     private Label welcomeText;
 
@@ -36,6 +37,7 @@ public class HelloController extends HelloApplication {
 
     @FXML
     private URL location;
+
     @FXML
     private MenuButton hour;
     @FXML
@@ -178,12 +180,11 @@ public class HelloController extends HelloApplication {
             String newFormatted = String.valueOf(Integer.parseInt(dateCount.format(neew)));
             if (b > 0) {
                 if (newFormatted.equals(hour.getText() + minute.getText())) {
-//                try {
-//                    Process off = Runtime.getRuntime().exec("shutdown -s");
-//                } catch (IOException e) {
-//                    throw new RuntimeException(e);
-//                }
-                    System.out.println("nou");
+                    try {
+                        Process off = Runtime.getRuntime().exec("shutdown -s");
+                    } catch (IOException e) {
+                        throw new RuntimeException(e);
+                    }
                 }
             }
         }, 0, 1, TimeUnit.SECONDS);
@@ -426,6 +427,4 @@ public class HelloController extends HelloApplication {
         });
 
     }
-
-
 }
