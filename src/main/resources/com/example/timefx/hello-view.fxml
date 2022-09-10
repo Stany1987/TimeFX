@@ -74,9 +74,9 @@
             </AnchorPane>
          </children>
       </AnchorPane>
-      <ImageView fx:id="imageMy" fitHeight="66.0" fitWidth="106.0" layoutX="44.0" layoutY="43.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="imageMy" fitHeight="65.0" fitWidth="106.0" layoutX="44.0" layoutY="43.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="file:\C:\Users\STANY\IdeaProjects\TimeFX\res\imgCat.jpg" />
+            <Image url="file:src\main\java\com\example\res\imgCat.jpg" />
          </image>
       </ImageView>
     
