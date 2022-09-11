@@ -189,11 +189,15 @@ public class HelloController extends HelloApplication {
             }
         }, 0, 1, TimeUnit.SECONDS);
 
+
         butActT.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent actionEvent) {
                 b++;
+                butActT.setStyle("-fx-background-color: #FFE4B5");
+                butActT.setText("Таймер включен");
             }
+
         });
 
         hour0.setOnAction(new EventHandler<ActionEvent>() {
